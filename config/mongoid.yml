@@ -18,9 +18,7 @@ test:
 production:
   sessions:
     default:
-      database: <%=ENV["MONGODB_DATABASE"]%>
-      hosts:
-        - <%=ENV["MONGODB_HOST"]%>
+      uri: <%= ENV['MONGOHQ_URL'] %>
       options:
-        write:
-          w: majority
+        safe: true
+        skip_version_check: true
