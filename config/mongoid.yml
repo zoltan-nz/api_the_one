@@ -1,0 +1,26 @@
+development:
+  sessions:
+    default:
+      database: <%=ENV["MONGODB_DATABASE"]%>
+      hosts:
+        - <%=ENV["MONGODB_HOST"]%>
+
+test:
+  sessions:
+    default:
+      database: <%=ENV["MONGODB_DATABASE_TEST"]%>
+      hosts:
+        - <%=ENV["MONGODB_HOST"]%>
+      options:
+        max_retries: 1
+        retry_interval: 0
+
+production:
+  sessions:
+    default:
+      database: <%=ENV["MONGODB_DATABASE"]%>
+      hosts:
+        - <%=ENV["MONGODB_HOST"]%>
+      options:
+        write:
+          w: majority
