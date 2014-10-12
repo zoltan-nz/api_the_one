@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
+  get 'todos/index'
+
   root to: 'root#index'
 
   scope :api, module: nil, defaults: { format: :json } do
-    scope :todo, module: nil do
-
-      resources :todo
-
-    end
+    resources :todos
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
