@@ -25,6 +25,9 @@ group :development, :test do
   gem 'spring'
 
   gem 'dotenv-rails'
+
+  gem 'pry'
+  gem 'pry-rails'
 end
 
 gem 'puma'

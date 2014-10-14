@@ -4,15 +4,19 @@ class TodosController < ApplicationController
     render json: {
                todos: [
                    {
-                       id: '1',
+                       id: 1,
                        body: 'First Todo'
                    },
                    {
-                       id: '2',
+                       id: 2,
                        body: 'Second Todo'
                    }
                ]
 
            }
+  end
+
+  def create
+    render json: {}
   end
 end
