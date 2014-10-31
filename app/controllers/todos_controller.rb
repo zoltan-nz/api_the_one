@@ -1,22 +1,15 @@
 class TodosController < ApplicationController
 
   def index
-    render json: {
-               todos: [
-                   {
-                       id: 1,
-                       body: 'First Todo'
-                   },
-                   {
-                       id: 2,
-                       body: 'Second Todo'
-                   }
-               ]
-
-           }
+    @todos = Todo.all
+    render json: {todos: @todos}
   end
 
   def create
     render json: {}
   end
+
+  private
+
+
 end
