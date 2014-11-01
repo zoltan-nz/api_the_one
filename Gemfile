@@ -7,6 +7,7 @@ gem 'rails', '4.2.0.beta4'
 #db
 gem 'mongoid'
 gem 'mongoid-history'
+gem 'bson_ext'
 
 #json
 gem 'oj'
