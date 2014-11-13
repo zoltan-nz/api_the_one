@@ -37,20 +37,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (6.0.0.beta2)
-    binding_of_caller (0.7.3.pre1)
-      debug_inspector (>= 0.0.1)
     bson (2.3.0)
     bson_ext (1.5.1)
     builder (3.2.2)
-    byebug (3.5.1)
-      columnize (~> 0.8)
-      debugger-linecache (~> 1.2)
-      slop (~> 3.6)
     coderay (1.1.0)
-    columnize (0.8.9)
     connection_pool (2.0.0)
-    debug_inspector (0.0.2)
-    debugger-linecache (1.2.0)
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
@@ -63,12 +54,12 @@ GEM
     json (1.8.1)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
-    mail (2.6.1)
+    mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.4.3)
-    mini_portile (0.6.0)
-    minitest (5.4.2)
+    mini_portile (0.6.1)
+    minitest (5.4.3)
     mongoid (4.0.0)
       activemodel (~> 4.0)
       moped (~> 2.0.0)
@@ -83,9 +74,9 @@ GEM
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
     multi_json (1.10.1)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
-    oj (2.10.4)
+    nokogiri (1.6.4.1)
+      mini_portile (~> 0.6.0)
+    oj (2.11.1)
     optionable (0.2.0)
     origin (2.1.1)
     pry (0.10.1)
@@ -131,7 +122,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
     slop (3.6.0)
-    spring (1.1.3)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -146,18 +136,12 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    web-console (2.0.0.beta4)
-      activemodel (~> 4.0)
-      binding_of_caller (= 0.7.3.pre1)
-      railties (~> 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bson_ext
-  byebug
   dotenv-rails
   mongoid
   mongoid-history
@@ -168,5 +152,3 @@ DEPENDENCIES
   rack-cors
   rails (= 4.2.0.beta4)
   rails_12factor
-  spring
-  web-console (~> 2.0.0.beta4)
