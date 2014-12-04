@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.4'
+ruby '2.1.5'
 
-gem 'rails', '4.2.0.beta4'
+gem 'rails', '~> 4.2.0.rc1'
 
 gem 'puma'
 
