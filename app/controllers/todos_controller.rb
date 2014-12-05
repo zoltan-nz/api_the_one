@@ -9,7 +9,4 @@ class TodosController < ApplicationController
     render json: {}
   end
 
-  private
-
-
 end
