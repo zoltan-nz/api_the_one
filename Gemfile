@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.5'
 
-gem 'rails', '~> 4.2.0.rc1'
+gem 'rails', '~> 4.2.0.rc2'
 
 gem 'puma'
 
@@ -24,4 +24,4 @@ group :development, :test do
   gem 'pry-rails'
 end
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
