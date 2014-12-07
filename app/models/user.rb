@@ -1,6 +1,8 @@
 class User
   include BaseModel
-  field :name, type: String
+
+  field :email, type: String, default: ''
+  field :encrypted_password, type: String, default: ''
 
   belongs_to :project
   has_many :todos

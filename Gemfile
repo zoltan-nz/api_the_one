@@ -6,6 +6,8 @@ gem 'rails', '~> 4.2.0.rc2'
 
 gem 'puma'
 
+gem 'devise'
+
 #db
 gem 'mongoid'
 gem 'mongoid-history'
