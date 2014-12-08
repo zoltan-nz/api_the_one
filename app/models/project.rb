@@ -5,5 +5,5 @@ class Project
   validates :title, presence: true
 
   has_many :todos
-  has_many :users
+  belongs_to :user
 end

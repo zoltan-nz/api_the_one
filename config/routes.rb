@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+
   root to: 'root#index'
 
   scope :api, module: nil, defaults: { format: :json } do
+    devise_for :users
     resources :projects
     resources :todos
     resources :users

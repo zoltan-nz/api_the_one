@@ -4,6 +4,6 @@ class User
   field :email, type: String, default: ''
   field :encrypted_password, type: String, default: ''
 
-  belongs_to :project
+  has_many :projects
   has_many :todos
 end
