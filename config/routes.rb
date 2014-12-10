@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   root to: 'root#index'
 
   scope :api, module: nil, defaults: { format: :json } do
-    devise_for :users
+
+    devise_for :users, controllers: { sessions: 'users/sessions' }
+
     resources :projects
     resources :todos
-    resources :users
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
