@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
 
   self.responder = ApiResponder
 
+  rescue_from Mongoid::Errors::DocumentNotFound do
+    respond_with(nil, status: :not_found)
+  end
+
 end
