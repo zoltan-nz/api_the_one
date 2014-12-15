@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
 
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   def index
     @projects = Project.all
@@ -10,6 +10,11 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     @project.save
+    render json: { project: @project }
+  end
+
+  def show
+    @project = Project.find(params[:id])
     render json: { project: @project }
   end
 

@@ -1,7 +1,7 @@
 class TodosController < ApplicationController
 
   def index
-    @todos = Todo.all
+    @todos = Todo.where(project_id: params[:id])
     render json: {todos: @todos}
   end
 
