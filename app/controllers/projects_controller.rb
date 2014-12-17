@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
-    render json: { projects: @projects }
+    respond_with({ projects: @projects }, root: false)
   end
 
   def create
